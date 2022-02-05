@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Information = () => {
+function Information() {
   return <div>Information</div>
 }
 

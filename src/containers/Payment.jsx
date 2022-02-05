@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Payment = () => {
+function Payment() {
   return <div>Payment</div>
 }
 
