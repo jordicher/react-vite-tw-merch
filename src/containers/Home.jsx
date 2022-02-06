@@ -1,7 +1,9 @@
 import React from 'react'
+import Products from '../components/Products'
+import initialState from '../initialState'
 
 function Home() {
-  return <h1 className="underline"> Hello world! </h1>
+  return <Products products={initialState.products} />
 }
 
 export default Home
