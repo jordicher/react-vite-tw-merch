@@ -1,1 +1,1 @@
-# platzi-conf-merch
+# react-vite-tw-merch
