@@ -4,7 +4,7 @@ import Product from './Product'
 
 function Products({ products }) {
   return (
-    <div className="grid grid-cols-12 gap-6">
+    <div className="flex flex-wrap -m-4">
       {products.map(product => (
         <Product key={product.id} product={product} />
       ))}

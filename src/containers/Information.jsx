@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Information() {
   return (
@@ -64,8 +65,12 @@ function Information() {
         </form>
 
         <div className="flex justify-between">
-          <div>Regresar</div>
-          <div>pagar</div>
+          <Link to="/checkout">
+            <button type="button">Regresar</button>
+          </Link>
+          <Link to="/checkout/payment">
+            <button type="button">pagar</button>
+          </Link>
         </div>
       </div>
       <div className="col-span-12 md:col-span-4">
