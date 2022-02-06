@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import AppContext from '../context/AppContext'
 
 function Header() {
+  const {
+    state: { cart }
+  } = useContext(AppContext)
   return (
     <header className="flex justify-between mb-5">
       <Link to="/">
         <h1 className="text-3xl font-bold">JordiCher Merch</h1>
       </Link>
-      <div>
+      <div className="flex flex-row">
         <Link to="/checkout">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +27,9 @@ function Header() {
             />
           </svg>
         </Link>
+        {cart.length > 0 && (
+          <div className="my-auto font-bold">{cart.length} </div>
+        )}
       </div>
     </header>
   )
